@@ -120,7 +120,7 @@ var GameState = {
 	        
 	        game.physics.box2d.revoluteJoint(rearArm, foreArm, -40, 0, 35, 0, 0, 0, false, -150, 0, true);
 
-	        game.physics.box2d.revoluteJoint(foreArm, hand, -30, 0, 0, 0, 0, 0, false, 0, 1, true);
+	        game.physics.box2d.revoluteJoint(foreArm, hand, -40, 0, 0, 0, 0, 0, false, 0, 1, true);
 
 	        bodyAs.push(base.body);
 	    }
