@@ -202,7 +202,7 @@ var GameState = {
 	   	timer = game.time.create();
         
         // Create a delayed event 1m and 30s from now
-        timerEvent = timer.add(Phaser.Timer.MINUTE * 1 + Phaser.Timer.SECOND * 30, this.endTimer, this);
+        timerEvent = timer.add(Phaser.Timer.MINUTE * 0 + Phaser.Timer.SECOND * 10, this.endTimer, this);
         
 
 	},
@@ -236,6 +236,7 @@ var GameState = {
         }
         else {
             game.debug.text("Click on the hand to start!", 360, 24, "#000");
+            bag.kill()
         }
     },
     endTimer: function() {
